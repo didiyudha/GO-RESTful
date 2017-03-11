@@ -13,10 +13,10 @@ type User struct {
 ```
 
 and these the routes:
-* users: Method: GET, POST
-* users/1: Method: GET, PUT, DELETE
+* *users*: Method: GET, POST
+* *users/1*: Method: GET, PUT, DELETE
 
 I used these packages:
-* github.com/julienschmidt/httprouter for routing, because it's simple and ease to understand
-* golang.org/x/crypto/bcrypt for encrypting password
+* *github.com/julienschmidt/httprouter* for routing, because it's simple and ease to understand
+* *golang.org/x/crypto/bcrypt* for encrypting password
 
