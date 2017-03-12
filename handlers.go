@@ -43,6 +43,7 @@ func SaveUsers(w http.ResponseWriter, req *http.Request, _ httprouter.Params) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	defer body.Close()
 	err = usr.Save()
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
